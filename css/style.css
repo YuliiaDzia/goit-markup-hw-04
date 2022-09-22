@@ -40,6 +40,14 @@ ul {
   padding: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -174,19 +182,16 @@ ul {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-
+    background-color: var(--hero-background-color);
     max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
 
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-    ),
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
-    background-color: var(--hero-background-color);
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -346,7 +351,7 @@ ul {
     display: block;
     border-radius: 50%;
     color: #afb1b8;
-    background-color: #f5f4fa;
+    background-color: #ffffff;
 }
 
 .team-social-link:hover,
